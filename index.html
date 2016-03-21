@@ -21,17 +21,15 @@
         var age = " I am " +me.age + " years old.";
         console.log(age);
 
-        for (var i = 0; i<me.residences.length; i++)
-        { console.log(" I live in " +me.residences[i] + ".")}
-
         var school = " I study at " +me.school + ".";
         console.log(school);
 
+        var residences = " I live in " + me.residences[0] + " and " + me.residences[1];
+
         $("body").append(introduction);
         $("body").append(age);
-
         $("body").append(school);
-
+        $("body").append(residences);
       });
         </script>
 

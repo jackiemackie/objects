@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> Javascript - Objects</title>
+      <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+      <script>
+        $(document).ready(function(){
+        var me = {
+          "first":"Jackie",
+          "last":"Baum",
+          "age":19,
+          "residences":["Brooklyn", "Manhattan"],
+          "school":" The Cooper Union",
+        };
+        console.log(me);
+
+        var introduction = "My name is " + me.first + " " + me.last + ".";
+        console.log(introduction);
+
+        var age = " I am " +me.age + " years old.";
+        console.log(age);
+
+        for (var i = 0; i<me.residences.length; i++)
+        { console.log(" I live in " +me.residences[i] + ".")}
+
+        var school = " I study at " +me.school + ".";
+        console.log(school);
+
+        $("body").append(introduction);
+        $("body").append(age);
+
+        $("body").append(school);
+
+      });
+        </script>
+
+  </head>
+
+  <body>
+
+  </body>
+
+</html>
